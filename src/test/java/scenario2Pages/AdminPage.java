@@ -34,7 +34,7 @@ public class AdminPage {
 
 		for (WebElement element : allElements) {
 			System.out.println(element.getText());
-			if (element.getText().contains("Admin")) {
+			if (element.getText().contains("Buzz")) {
 				element.click();
 				break;
 			}

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\banti\AppData\Local\Temp\testng-eclipse-519602046\testng-customsuite.xml</span>
+                    <span>C:\Users\banti\AppData\Local\Temp\testng-eclipse-1875009480\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,21 +101,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="scenario2Test.AdminPageTest" class="method navigator-link" hash-for-method="VerifySearchWithUsername">VerifySearchWithUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="scenario2Test.AdminPageTest" class="method navigator-link" hash-for-method="VerifySerchWithUserRole">VerifySerchWithUserRole</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="scenario2Test.AdminPageTest" class="method navigator-link" hash-for-method="VerifySerchWithUserStatus">VerifySerchWithUserStatus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="scenario2Test.AdminPageTest" class="method navigator-link" hash-for-method="getAllMenu">getAllMenu</a> <!-- method navigator-link -->
@@ -141,27 +126,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifySearchWithUsername">
-                  </a> <!-- VerifySearchWithUsername -->
-                  <span class="method-name">VerifySearchWithUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifySerchWithUserRole">
-                  </a> <!-- VerifySerchWithUserRole -->
-                  <span class="method-name">VerifySerchWithUserRole</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifySerchWithUserStatus">
-                  </a> <!-- VerifySerchWithUserStatus -->
-                  <span class="method-name">VerifySerchWithUserStatus</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="getAllMenu">
                   </a> <!-- getAllMenu -->
                   <span class="method-name">getAllMenu</span>
@@ -172,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\banti\AppData\Local\Temp\testng-eclipse-519602046\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\banti\AppData\Local\Temp\testng-eclipse-1875009480\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;scenario2Test.AdminPageTest&quot;/&gt;
+      &lt;class name=&quot;scenario2Test.AdminPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getAllMenu&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scenario2Test.AdminPageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,28 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifySearchWithUsername')
+data.setCell(0, 1, 'getAllMenu')
 data.setCell(0, 2, 'scenario2Test.AdminPageTest')
-data.setCell(0, 3, 6358);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getAllMenu')
-data.setCell(1, 2, 'scenario2Test.AdminPageTest')
-data.setCell(1, 3, 5686);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifySerchWithUserRole')
-data.setCell(2, 2, 'scenario2Test.AdminPageTest')
-data.setCell(2, 3, 4168);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifySerchWithUserStatus')
-data.setCell(3, 2, 'scenario2Test.AdminPageTest')
-data.setCell(3, 3, 3457);
+data.setCell(0, 3, 1602);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -257,9 +213,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">scenario2Test.AdminPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">VerifySerchWithUserRole</span>
+                <br/>
+                <span class="ignored-method-name">VerifySerchWithUserStatus</span>
+                <br/>
+                <span class="ignored-method-name">VerifySearchWithUsername</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -275,27 +242,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">pageSetup</span>
-                <span class="method-start">38073 ms</span>
+                <span class="method-start">16266 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">getAllMenu</span>
-                <span class="method-start">44956 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifySearchWithUsername</span>
-                <span class="method-start">50653 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifySerchWithUserRole</span>
-                <span class="method-start">57017 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifySerchWithUserStatus</span>
-                <span class="method-start">61191 ms</span>
+                <span class="method-start">18249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64651 ms</span>
+                <span class="method-start">19859 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

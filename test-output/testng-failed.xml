@@ -5,11 +5,8 @@
     <classes>
       <class name="scenario2Test.AdminPageTest">
         <methods>
-          <include name="VerifySearchWithUsername"/>
-          <include name="VerifySerchWithUserRole"/>
           <include name="tearDown"/>
           <include name="pageSetup"/>
-          <include name="VerifySerchWithUserStatus"/>
           <include name="getAllMenu"/>
           <include name="setUp"/>
         </methods>
