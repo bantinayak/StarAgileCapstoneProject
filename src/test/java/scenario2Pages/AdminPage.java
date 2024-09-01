@@ -21,7 +21,7 @@ public class AdminPage {
 			.xpath("(//form[@class='oxd-form']//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[1]");
 	private By status = By
 			.xpath("(//form[@class='oxd-form']//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[2]");
-	private By searchbtn = By.cssSelector("button[type='submit']");
+	private By searchbtn = By.xpath("//form[@class='oxd-form']//button[@type='submit']");
 	private By recordmsg = By
 			.xpath("//div[contains(@class,'orangehrm-horizontal-padding')]//span[contains(@class,'oxd-text')]");
 	private By userROptions = By.xpath("(//span[normalize-space()='Admin'])[2]");
