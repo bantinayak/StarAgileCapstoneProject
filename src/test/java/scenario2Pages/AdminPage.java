@@ -29,11 +29,11 @@ public class AdminPage {
 
 	// methods
 	public void getMenu() {
-		List<WebElement> allElements = driver.findElements(menu);
-		Reporter.log("allElements are: " + allElements, true);
-		Reporter.log("Total menu options are: " + allElements.size(), true);
+		List<WebElement> allMenu = driver.findElements(menu);
+		//Reporter.log("allElements are: " + allElements, true);
+		Reporter.log("Total menu options are: " + allMenu.size(), true);
 
-		for (WebElement element : allElements) {
+		for (WebElement element : allMenu) {
 			Reporter.log(element.getText(), true);
 			if (element.getText().contains("Buzz")) {
 				element.click();
