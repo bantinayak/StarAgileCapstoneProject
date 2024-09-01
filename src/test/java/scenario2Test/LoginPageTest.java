@@ -1,6 +1,7 @@
 package scenario2Test;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 
@@ -11,7 +12,7 @@ public class LoginPageTest extends BaseClass {
 
 		String act = lp.getAppTitle();
 		Assert.assertTrue(act.contains("HRM"), "Error-Title not match");
-		System.out.println("Title match!");
+		Reporter.log("Title match!", true);
 	}
 
 	@Test(priority = 2)
@@ -21,7 +22,7 @@ public class LoginPageTest extends BaseClass {
 
 	@Test(priority = 3)
 	public void verifyCurrentUrl() {
-		System.out.println(lp.getAppUrl());
+		Reporter.log("Title is: "+lp.getAppUrl(), true);
 	}
 
 }
