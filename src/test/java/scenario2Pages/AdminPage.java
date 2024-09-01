@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
 public class AdminPage {
 	private WebDriver driver;
@@ -29,11 +30,11 @@ public class AdminPage {
 	// methods
 	public void getMenu() {
 		List<WebElement> allElements = driver.findElements(menu);
-		System.out.println(allElements);
-		System.out.println("Total menu options are: " + allElements.size());
+		Reporter.log("allElements are: " + allElements, true);
+		Reporter.log("Total menu options are: " + allElements.size(), true);
 
 		for (WebElement element : allElements) {
-			System.out.println(element.getText());
+			Reporter.log(element.getText(), true);
 			if (element.getText().contains("Buzz")) {
 				element.click();
 				break;
@@ -42,7 +43,6 @@ public class AdminPage {
 	}
 
 	public void searchEmpByUsername(String name) {
-		System.out.println("Search Employee by UserName");
 		driver.findElement(uname).sendKeys(name);
 
 		driver.findElement(searchbtn).click();
@@ -52,13 +52,13 @@ public class AdminPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(driver.findElement(recordmsg).getText());
+		Reporter.log(driver.findElement(recordmsg).getText(), true);
 
 		driver.findElement(uname).clear();
 	}
 
 	public void searchEmpByUserRole(String role) {
-		System.out.println("Search Employee by UserRole");
+		Reporter.log("Search Employee by UserRole", true);
 
 		driver.findElement(userrole).click();
 		List<WebElement> list = driver.findElements(userROptions);
@@ -76,13 +76,13 @@ public class AdminPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(driver.findElement(recordmsg).getText());
+		Reporter.log(driver.findElement(recordmsg).getText(), true);
 
 		driver.navigate().refresh();
 	}
 
 	public void searchEmpByStatus(String stat) {
-		System.out.println("Search Employee by Status");
+		Reporter.log("Search Employee by Status", true);
 
 		driver.findElement(status).click();
 		List<WebElement> list = driver.findElements(statustext);
@@ -100,7 +100,7 @@ public class AdminPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(driver.findElement(recordmsg).getText());
+		Reporter.log(driver.findElement(recordmsg).getText(), true);
 
 	}
 
