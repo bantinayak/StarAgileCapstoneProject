@@ -16,6 +16,7 @@ public class AdminPage {
 
 	// locator
 	private By menu = By.xpath("//ul[@class='oxd-main-menu']//li//span");
+	
 	private By uname = By.xpath("//form[@class='oxd-form']//input[@class='oxd-input oxd-input--active']");
 	private By userrole = By
 			.xpath("(//form[@class='oxd-form']//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[1]");
