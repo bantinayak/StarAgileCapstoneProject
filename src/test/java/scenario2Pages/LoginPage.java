@@ -7,7 +7,7 @@ public class LoginPage {
 	private WebDriver driver;
 
 	// initialize driver
-	public LoginPage(WebDriver driver)// Base class
+	public LoginPage(WebDriver driver)
 	{
 		this.driver = driver;
 	}

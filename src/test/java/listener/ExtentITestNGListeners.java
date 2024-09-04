@@ -2,11 +2,9 @@ package listener;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
@@ -36,7 +34,6 @@ public class ExtentITestNGListeners extends DataDrivenTest implements ITestListe
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-//		captureScreenshot(result.getTestClass().getRealClass().getSimpleName()+"_"+pass+"_"+timestamp()+".png");
 
 	}
 
@@ -53,10 +50,9 @@ public class ExtentITestNGListeners extends DataDrivenTest implements ITestListe
 			captureScreenshot(
 					result.getTestClass().getRealClass().getSimpleName() + "_" + fail + "_" + timestamp() + ".png");
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
-//		captureScreenshot(result.getTestClass().getRealClass().getSimpleName()+"_"+fail+"_"+timestamp()+".png");
 
 	}
 

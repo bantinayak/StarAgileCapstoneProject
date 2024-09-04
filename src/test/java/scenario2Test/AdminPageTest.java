@@ -14,12 +14,12 @@ public class AdminPageTest extends BaseClass {
 	}
 
 	@Test(priority = 3)
-	public void VerifySerchWithUserRole() {
+	public void VerifySearchWithUserRole() {
 		ap.searchEmpByUserRole("Admin");
 	}
 
 	@Test(priority = 4)
-	public void VerifySerchWithUserStatus() {
+	public void VerifySearchWithUserStatus() {
 		ap.searchEmpByStatus("Enabled");
 	}
 

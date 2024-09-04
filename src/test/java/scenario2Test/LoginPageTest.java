@@ -4,8 +4,6 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-
-
 public class LoginPageTest extends BaseClass {
 	@Test(priority = 1)
 	public void verifyTitle() {

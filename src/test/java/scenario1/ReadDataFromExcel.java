@@ -3,12 +3,10 @@ package scenario1;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,18 +20,6 @@ public class ReadDataFromExcel {
 	XSSFSheet sheet;
 	XSSFRow row;
 	XSSFCell cell;
-
-	@Test(enabled = false)
-	public void ReadData() {
-		row = sheet.getRow(0);
-		cell = row.getCell(0);
-
-		Reporter.log(cell.getStringCellValue(), true);
-
-		// read 2nd row
-		Reporter.log(sheet.getRow(0).getCell(1).getStringCellValue(), true);
-		Reporter.log(sheet.getRow(0).getCell(2).getStringCellValue(), true);
-	}
 
 	@Test
 	public void ReadAllData() {

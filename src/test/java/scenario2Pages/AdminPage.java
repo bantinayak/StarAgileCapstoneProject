@@ -1,7 +1,6 @@
 package scenario2Pages;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,8 +15,9 @@ public class AdminPage {
 
 	// locator
 	private By menu = By.xpath("//ul[@class='oxd-main-menu']//li//span");
-	
+
 	private By uname = By.xpath("//form[@class='oxd-form']//input[@class='oxd-input oxd-input--active']");
+
 	private By userrole = By
 			.xpath("(//form[@class='oxd-form']//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[1]");
 	private By status = By
@@ -31,12 +31,14 @@ public class AdminPage {
 	// methods
 	public void getMenu() {
 		List<WebElement> allMenu = driver.findElements(menu);
-		//Reporter.log("allElements are: " + allElements, true);
 		Reporter.log("Total menu options are: " + allMenu.size(), true);
-
 		for (WebElement element : allMenu) {
 			Reporter.log(element.getText(), true);
-			if (element.getText().contains("Buzz")) {
+		}
+
+		for (WebElement element : allMenu) {
+
+			if (element.getText().contains("Admin")) {
 				element.click();
 				break;
 			}
@@ -48,7 +50,7 @@ public class AdminPage {
 
 		driver.findElement(searchbtn).click();
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -96,7 +98,7 @@ public class AdminPage {
 
 		driver.findElement(searchbtn).click();
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

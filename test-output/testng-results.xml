@@ -1,107 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Total menu options are: 12]]>
+      <![CDATA[Title match!]]>
     </line>
     <line>
-      <![CDATA[Admin]]>
-    </line>
-    <line>
-      <![CDATA[PIM]]>
-    </line>
-    <line>
-      <![CDATA[Leave]]>
-    </line>
-    <line>
-      <![CDATA[Time]]>
-    </line>
-    <line>
-      <![CDATA[Recruitment]]>
-    </line>
-    <line>
-      <![CDATA[My Info]]>
-    </line>
-    <line>
-      <![CDATA[Performance]]>
-    </line>
-    <line>
-      <![CDATA[Dashboard]]>
-    </line>
-    <line>
-      <![CDATA[Directory]]>
-    </line>
-    <line>
-      <![CDATA[Maintenance]]>
-    </line>
-    <line>
-      <![CDATA[Claim]]>
-    </line>
-    <line>
-      <![CDATA[Buzz]]>
+      <![CDATA[Title is: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-02T00:43:32 IST" name="Default suite" finished-at="2024-09-02T00:43:52 IST" duration-ms="20128">
+  <suite started-at="2024-09-04T23:48:05 IST" name="Default suite" finished-at="2024-09-04T23:48:24 IST" duration-ms="18106">
     <groups>
     </groups>
-    <test started-at="2024-09-02T00:43:32 IST" name="Default test" finished-at="2024-09-02T00:43:52 IST" duration-ms="20128">
-      <class name="scenario2Test.AdminPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenario2Test.AdminPageTest@543295b0]" started-at="2024-09-02T00:43:32 IST" name="setUp" finished-at="2024-09-02T00:43:42 IST" duration-ms="10357" status="PASS">
+    <test started-at="2024-09-04T23:48:05 IST" name="Default test" finished-at="2024-09-04T23:48:24 IST" duration-ms="18106">
+      <class name="scenario2Test.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenario2Test.LoginPageTest@74ea2410]" started-at="2024-09-04T23:48:06 IST" name="setUp" finished-at="2024-09-04T23:48:15 IST" duration-ms="9812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetup()[pri:0, instance:scenario2Test.AdminPageTest@543295b0]" started-at="2024-09-02T00:43:42 IST" name="pageSetup" finished-at="2024-09-02T00:43:45 IST" duration-ms="2086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageSetup -->
-        <test-method signature="getAllMenu()[pri:1, instance:scenario2Test.AdminPageTest@543295b0]" started-at="2024-09-02T00:43:45 IST" name="getAllMenu" finished-at="2024-09-02T00:43:47 IST" duration-ms="2459" status="PASS">
+        <test-method signature="verifyTitle()[pri:1, instance:scenario2Test.LoginPageTest@74ea2410]" started-at="2024-09-04T23:48:15 IST" name="verifyTitle" finished-at="2024-09-04T23:48:15 IST" duration-ms="59" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Total menu options are: 12]]>
-            </line>
-            <line>
-              <![CDATA[Admin]]>
-            </line>
-            <line>
-              <![CDATA[PIM]]>
-            </line>
-            <line>
-              <![CDATA[Leave]]>
-            </line>
-            <line>
-              <![CDATA[Time]]>
-            </line>
-            <line>
-              <![CDATA[Recruitment]]>
-            </line>
-            <line>
-              <![CDATA[My Info]]>
-            </line>
-            <line>
-              <![CDATA[Performance]]>
-            </line>
-            <line>
-              <![CDATA[Dashboard]]>
-            </line>
-            <line>
-              <![CDATA[Directory]]>
-            </line>
-            <line>
-              <![CDATA[Maintenance]]>
-            </line>
-            <line>
-              <![CDATA[Claim]]>
-            </line>
-            <line>
-              <![CDATA[Buzz]]>
+              <![CDATA[Title match!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- getAllMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:scenario2Test.AdminPageTest@543295b0]" started-at="2024-09-02T00:43:47 IST" name="tearDown" finished-at="2024-09-02T00:43:52 IST" duration-ms="5159" status="PASS">
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="verifyLogin()[pri:2, instance:scenario2Test.LoginPageTest@74ea2410]" started-at="2024-09-04T23:48:15 IST" name="verifyLogin" finished-at="2024-09-04T23:48:18 IST" duration-ms="2704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method signature="verifyCurrentUrl()[pri:3, instance:scenario2Test.LoginPageTest@74ea2410]" started-at="2024-09-04T23:48:18 IST" name="verifyCurrentUrl" finished-at="2024-09-04T23:48:18 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Title is: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCurrentUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:scenario2Test.LoginPageTest@74ea2410]" started-at="2024-09-04T23:48:18 IST" name="tearDown" finished-at="2024-09-04T23:48:24 IST" duration-ms="5359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- scenario2Test.AdminPageTest -->
+      </class> <!-- scenario2Test.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

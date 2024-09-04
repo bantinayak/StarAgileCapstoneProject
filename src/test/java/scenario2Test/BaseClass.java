@@ -30,17 +30,17 @@ public class BaseClass {
 
 	}
 
-	@BeforeClass
+	/*@BeforeClass
 	public void pageSetup() {
 		System.out.println("Login Test");
 		lp.doLogin("Admin", "admin123");
 
-	}
+	}*/
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000); // Wait for 5 sec before quit
-		driver.close();
+		driver.quit();
 		
 	}
 
